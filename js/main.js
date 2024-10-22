@@ -664,6 +664,24 @@ var animateReveal = function() {
 //////////////////////////////////////////
 }
 
+$(document).ready(function(){
+    $(".process button").click(function(){
+        $("body").append($("#overlay")); // #overlay를 body의 자식 요소로 이동
+        $("#overlay").fadeIn();
+    });
+
+    $("#overlay").click(function(event){
+        if ($(event.target).is("#overlay")) {
+            $(this).fadeOut();
+        }
+    });
+});
+
+
+
+
+
+
 
 
 
