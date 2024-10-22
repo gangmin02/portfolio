@@ -167,16 +167,11 @@ a:hover {
 .unslate_co--site-nav .container {
   position: relative;
 }
+
 .unslate_co--site-nav .site-logo {
   z-index: 99;
 }
-.unslate_co--site-nav .site-logo.pos-absolute {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
+
 .unslate_co--site-nav .site-nav-ul-wrap {
   width: 100%;
   margin: 0 auto;
@@ -1260,6 +1255,16 @@ a:hover {
   background: rgba(0, 0, 0, 0.5);
   content: "";
 }
+.portfolio-item .overlay .con{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+}
+
+
 .portfolio-item .wrap-icon,
 .blog-item .wrap-icon {
   position: absolute;
@@ -1274,6 +1279,7 @@ a:hover {
   left: 20px;
   right: 20px;
 }
+
 .portfolio-item .portfolio-item-content h3,
 .portfolio-item .portfolio-item-content p,
 .blog-item .portfolio-item-content h3,
@@ -1581,6 +1587,10 @@ figure.dotted-bg:before {
   line-height: 28px;
 }
 @media (max-width: 767.98px) {
+  .justify-content-between{
+    flex-direction: row;
+  }
+
   .feature-v1 {
     text-align: center;
   }
@@ -2319,6 +2329,7 @@ span.error {
 .gsap-reveal-img .reveal-wrap {
   position: relative;
   overflow: hidden;
+  background-color: #e0e0e0;
 }
 .gsap-reveal-img .reveal-wrap .cover {
   position: absolute;
@@ -2413,4 +2424,10 @@ span.error {
 .service .service-about h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  .container{
+    padding: 0 20px;
+  }
 }

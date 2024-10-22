@@ -662,5 +662,18 @@ var animateReveal = function() {
 		});
 	}
 
+	/* 클릭 시 속성명 변경 */
+	$('.process').on('click', function() {
+        // 현재 텍스트를 가져옵니다.
+        var text = $(this).text();
+        
+        // <a> 태그로 변경하고 href 속성을 추가합니다.
+        var link = $('<a></a>')
+            .attr('href', 'https://www.naver.com/') // 원하는 링크 설정
+            .text(text); // 기존 텍스트 설정
+        
+        // 현재 요소를 <a> 태그로 교체합니다.
+        $(this).replaceWith(link);
+    });
 }
 
