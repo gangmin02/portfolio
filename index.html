@@ -1,9 +1,3 @@
-<!-- /*
-* Template Name: Untreefolio
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,12 +13,15 @@
     <meta name="keywords" content="" />
     <title>포트폴리오</title>
 
+    
     <link rel="stylesheet" href="css/vendor/icomoon/style.css" />
     <link rel="stylesheet" href="css/vendor/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/vendor/animate.min.css" />
     <link rel="stylesheet" href="css/vendor/aos.css" />
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="css/vendor/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -126,6 +123,8 @@
                         <img src="./images/css.png" alt="css">
                         <img src="./images/java.png" alt="javascript">
                         <img src="./images/jquery.png" alt="jquery">
+                        <img src="./images/Premiere Pro.png" alt="Premiere Pro">
+                        <img src="./images/After Effects.png" alt="After Effects">
                       </div>
                     </div>
                   </div>
@@ -157,24 +156,31 @@
               <div id="posts" class="row gutter-isotope-item">
                 <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
                   <a
-                    href="portfolio-single-1.html"
-                    class="portfolio-item ajax-load-page isotope-item gsap-reveal-img"
-                    data-id="1"
+                    href="portfolio-single-3.html"
+                    class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img"
+                    data-id="3"
                   >
-                    <div class="overlay">
-                      <div class="portfolio-item-content">
-                        <h3>Neopham</h3>
-                        <p>web, branding</p>
-                      </div>
-                      <div class="con">
-                        <p class="process">작업과정</p>
-                      </div>
-                    </div>
-                    <img
+                    <div class="over">
+                      <img
                       src="images/portfolio/neopham.png"
                       class="lazyload img-fluid"
                       alt="neopham"
                     />
+                      <div class="overlay">
+                        <div class="con">
+                          <a href="#">작업과정</a>
+                          <a href="https://gangmin02.github.io/Neopharm/index.html" target="_blank">Index.html</a>
+                          <a href="https://gangmin02.github.io/Neopharm/sub1.html" target="_blank">Sub.html</a>
+                          
+                        </div>
+                        <div class="portfolio-item-content">
+                          <h3>Neopham</h3>
+                          <p>web, branding</p>
+                        </div>
+                        
+                      </div>
+                    
+                    </div>
                   </a>
                 </div>
                 <div
@@ -483,6 +489,7 @@
       <div class="site-loader"></div>
     </div>
 
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <script src="js/scripts-dist.js"></script>
     <script src="js/main.js"></script>
   </body>
