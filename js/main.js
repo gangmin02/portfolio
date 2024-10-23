@@ -665,9 +665,10 @@ var animateReveal = function() {
 }
 
 $(document).ready(function(){
-    $(".process button").click(function(){
-        $("body").append($("#overlay")); // #overlay를 body의 자식 요소로 이동
-        $("#overlay").fadeIn();
+    $(".on").click(function(){
+        var imgSrc = $(this).data("img-src");
+        $("#overlay img").attr("src", imgSrc);
+        $("#overlay").appendTo("body").fadeIn();
     });
 
     $("#overlay").click(function(event){
@@ -676,6 +677,10 @@ $(document).ready(function(){
         }
     });
 });
+
+
+
+
 
 
 

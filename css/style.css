@@ -1274,7 +1274,7 @@ a:hover {
   flex-direction: column;
   gap: 10px;
   position: absolute;
-  top: 36px;
+  top: 60px;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
@@ -1283,6 +1283,14 @@ a:hover {
 
 .over:hover .overlay{
   opacity: 1;
+}
+
+.on{
+  transition: 0.3s;
+}
+
+.on:hover p{
+  color: #000;
 }
 
 
@@ -1331,11 +1339,7 @@ a:hover {
   margin: auto;
 }
 
-.meta{
-  width: 345px;
-  height: 419px;
-  object-fit: cover;
-}
+
 
 
 
@@ -2072,6 +2076,12 @@ figure.dotted-bg:before {
   font-family: "Roboto", sans-serif;
   color: #fff;
 }
+
+.unslate_co--footer .footer-site-logo a:last-of-type {
+  font-size: 18px;
+  padding-top: 10px;
+}
+
 .unslate_co--footer .footer-site-logo a span {
   color: #3369e7;
 }
