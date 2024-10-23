@@ -1310,6 +1310,7 @@ a:hover {
 }
 
 .process .text{
+  width: 200px;
   height: 40px;
   background: linear-gradient(to right, #8bbde3, #3369e7);
   line-height: 40px;
