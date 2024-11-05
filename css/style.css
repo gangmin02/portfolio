@@ -14,7 +14,6 @@ body {
   color: #495057;
   font-size: 16px;
   line-height: 30px;
-  position: relative;
   background: #fff;
 }
 body:before {
@@ -81,9 +80,6 @@ a:hover {
   width: 100%;
   background-color: #3369e7;
   color: #fff;
-  left: 0;
-  right: 0;
-  bottom: 0px;
   z-index: -1;
   height: 400px;
 }
@@ -2076,11 +2072,12 @@ figure.dotted-bg:before {
   font-weight: 900;
   font-family: "Roboto", sans-serif;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .unslate_co--footer .footer-site-logo a:last-of-type {
   font-size: 18px;
-  padding-top: 10px;
+  font-weight: 500;
 }
 
 .unslate_co--footer .footer-site-logo a span {
@@ -2089,7 +2086,6 @@ figure.dotted-bg:before {
 .unslate_co--footer .footer-site-social {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
 }
 .unslate_co--footer .footer-site-social li {
   padding: 0;
